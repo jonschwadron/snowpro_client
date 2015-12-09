@@ -19,12 +19,12 @@ angular.module('Instagram', ['ngRoute', 'ngMessages', 'satellizer'])
       })
       .otherwise('/');
 
-    $authProvider.loginUrl = 'http://snowpro.herokuapp.com/auth/login';
-    $authProvider.signupUrl = 'http://snowpro.herokuapp.com/auth/signup';
+    $authProvider.loginUrl = 'https://snowpro.herokuapp.com/auth/login';
+    $authProvider.signupUrl = 'https://snowpro.herokuapp.com/auth/signup';
     $authProvider.oauth2({
       name: 'instagram',
-      url: 'http://snowpro.herokuapp.com/auth/instagram',
-      redirectUri: 'http://jonschwadron.github.io/snowpro_client/index.html',
+      url: 'https://snowpro.herokuapp.com/auth/instagram',
+      redirectUri: 'https://jonschwadron.github.io/snowpro_client/index.html',
       clientId: 'a3d34fd164894c35aaed50d4ff55e3ca',
       requiredUrlParams: ['scope'],
       scope: ['likes'],
