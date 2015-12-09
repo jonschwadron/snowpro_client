@@ -2,9 +2,15 @@
 
   <div ng-if="isAuthenticated() && currentUser.username">
     <div class="row">
-      <h1>Battle Snow Gear</h1>
-      <strong>{{currentUser.username}}</strong>
-      <hr>
+      <h1>Battle Snow Gear</h1><strong>#{{currentUser.username}}</strong>
+
+      <ul>
+        <li>
+          Weight: 160lbs
+          Height: 5'8"
+          Feet: 8.0
+        </li>
+      </ul>
       <h3>Snowboard</h3>
       <ul>
         <li>
@@ -36,6 +42,7 @@
       <ul>
         <li>
           <strong>Nike Kaiju</strong><small> 2015</small>
+          Size: 8.5
           Flex: Medium
           Lace: Traditional
         </li>
