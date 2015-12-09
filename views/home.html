@@ -1,14 +1,17 @@
 <div class="container">
 
-
   <div ng-if="isAuthenticated() && currentUser.username">
     <div class="row">
       <h1>Battle Snow Gear</h1>
+      <strong>{{currentUser.username}}</strong>
       <hr>
       <h3>Snowboard</h3>
       <ul>
         <li>
           <strong>Salomon Villain</strong><small> 2015</small>
+        </li>
+        <li>
+          Size: 155cm
         </li>
         <li>
           Stance: Regular
@@ -32,7 +35,9 @@
       <h3>Boots</h3>
       <ul>
         <li>
-          <strong>Nike Kaiju</strong><small>2015</small>
+          <strong>Nike Kaiju</strong><small> 2015</small>
+          Flex: Medium
+          Lace: Traditional
         </li>
       </ul>
 
