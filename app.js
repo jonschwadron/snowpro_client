@@ -24,7 +24,7 @@ angular.module('Instagram', ['ngRoute', 'ngMessages', 'satellizer'])
     $authProvider.oauth2({
       name: 'snowpro',
       url: 'https://snowpro.herokuapp.com/auth/instagram',
-      redirectUri: 'https://dl.dropboxusercontent.com/u/57700357/index.html',
+      redirectUri: '	http://jonschwadron.github.io/snowpro_client',
       clientId: 'a3d34fd164894c35aaed50d4ff55e3ca',
       requiredUrlParams: ['scope'],
       scope: ['likes'],
