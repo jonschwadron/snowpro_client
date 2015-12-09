@@ -19,8 +19,8 @@ angular.module('Instagram', ['ngRoute', 'ngMessages', 'satellizer'])
       })
       .otherwise('/');
 
-    $authProvider.loginUrl = 'http://snowpro.herokuapp.com/auth/login';
-    $authProvider.signupUrl = 'http://snowpro.herokuapp.com/auth/signup';
+    $authProvider.loginUrl = 'https://snowpro.herokuapp.com/auth/login';
+    $authProvider.signupUrl = 'https://snowpro.herokuapp.com/auth/signup';
     $authProvider.oauth2({
       name: 'snowpro',
       url: 'https://snowpro.herokuapp.com/auth/instagram',
