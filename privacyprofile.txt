@@ -1,0 +1,53 @@
+Privacy Policy
+
+1. INFORMATION WE COLLECT
+
+We collect the following types of information.
+
+Information you provide us directly:
+Your password and e-mail address when you register for a SnowPro account.
+
+Profile information that you provide for your user profile (e.g., first and last name, picture). This information allows us to help you or others be "found" on SnowPro.
+
+User Content (e.g., photos, comments, and other materials) that you post to the Service.
+
+Communications between you and SnowPro. For example, we may send you Service-related emails (e.g., account verification, changes/updates to features of the Service, technical and security notices). Note that you may not opt out of Service-related e-mails.
+
+
+Log file information:
+Log file information is automatically reported by your browser each time you make a request to access (i.e., visit) a web page or app. It can also be provided when the content of the webpage or app is downloaded to your browser or device.
+
+When you use our Service, our servers automatically record certain log file information, including your web request, Internet Protocol ("IP") address, browser type, referring / exit pages and URLs, number of clicks and how you interact with links on the Service, domain names, landing pages, pages viewed, and other such information. We may also collect similar information from emails sent to our Users which then help us track which emails are opened and which links are clicked by recipients. The information allows for more accurate reporting and improvement of the Service.
+
+Device identifiers:
+When you use a mobile device like a tablet or phone to access our Service, we may access, collect, monitor, store on your device, and/or remotely store one or more "device identifiers." Device identifiers are small data files or similar data structures stored on or associated with your mobile device, which uniquely identify your mobile device. A device identifier may be data stored in connection with the device hardware, data stored in connection with the device's operating system or other software, or data sent to the device by SnowPro.
+
+A device identifier may deliver information to us or to a third party partner about how you browse and use the Service and may help us or others provide reports or personalized content and ads. Some features of the Service may not function properly if use or availability of device identifiers is impaired or disabled.
+
+Metadata:
+Metadata is usually technical data that is associated with User Content. For example, Metadata can describe how, when and by whom a piece of User Content was collected and how that content is formatted.
+
+Users can add or may have Metadata added to their User Content including a hashtag (e.g., to mark keywords when you post a photo), geotag (e.g., to mark your location to a photo), comments or other data. This makes your User Content more searchable by others and more interactive. If you geotag your photo or tag your photo using other's APIs then, your latitude and longitude will be stored with the photo and searchable (e.g., through a location or map feature) if your photo is made public by you in accordance with your privacy settings.
+
+2. HOW WE USE YOUR INFORMATION
+
+In addition to some of the specific uses of information we describe in this Privacy Policy, we may use information that we receive to:
+help you efficiently access your information after you sign in
+remember information so you will not have to re-enter it during your visit or the next time you visit the Service;
+
+provide personalized content and information to you and others, which could include online ads or other forms of marketing
+
+provide, improve, test, and monitor the effectiveness of our Service
+develop and test new products and features
+
+monitor metrics such as total number of visitors, traffic, and demographic patterns
+
+diagnose or fix technology problems
+
+automatically update the Instagram application on your device
+
+SnowPro or other Users may run contests, special offers or other events or activities ("Events") on the Service. If you do not want to participate in an Event, do not use the particular Metadata (i.e. hashtag or geotag) associated with that Event.
+
+3. SHARING OF YOUR INFORMATION
+
+We will not rent or sell your information to third parties outside SnowPro (or the group of companies of which SnowPro is a part) without your consent, except as noted in this Policy. 
