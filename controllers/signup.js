@@ -1,16 +1,14 @@
-angular.module('Instagram')
-  .controller('SignupCtrl', function($scope, $auth) {
-
+angular.module('MyApp')
+  .controller('SignupCtrl', function($scope, $location, $auth, toastr) {
     $scope.signup = function() {
-      var user = {
-        email: $scope.email,
-        password: $scope.password
-      };
-
-      $auth.signup(user)
+      $auth.signup($scope.user)
+        .then(function(response) {
+          $auth.setToken(response);
+          $location.path('/');
+          toastr.info('You have successfully created a new account and have been signed-in');
+        })
         .catch(function(response) {
-          console.log(response.data);
+          toastr.error(response.data.message);
         });
     };
-
   });

@@ -1,39 +1,108 @@
-angular.module('Instagram', ['ngRoute', 'ngMessages', 'satellizer'])
-  .config(function($routeProvider, $authProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/home.html',
-        controller: 'HomeCtrl'
+angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.router', 'satellizer'])
+  .config(function($stateProvider, $urlRouterProvider, $authProvider) {
+    $stateProvider
+      .state('home', {
+        url: '/',
+        controller: 'HomeCtrl',
+        templateUrl: 'partials/home.html'
       })
-      .when('/login', {
-        templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
+      .state('login', {
+        url: '/login',
+        templateUrl: 'partials/login.html',
+        controller: 'LoginCtrl',
+        resolve: {
+          skipIfLoggedIn: skipIfLoggedIn
+        }
       })
-      .when('/signup', {
-        templateUrl: 'views/signup.html',
-        controller: 'SignupCtrl'
+      .state('signup', {
+        url: '/signup',
+        templateUrl: 'partials/signup.html',
+        controller: 'SignupCtrl',
+        resolve: {
+          skipIfLoggedIn: skipIfLoggedIn
+        }
       })
-      .when('/photo/:id', {
-        templateUrl: 'views/detail.html',
-        controller: 'DetailCtrl'
+      .state('logout', {
+        url: '/logout',
+        template: null,
+        controller: 'LogoutCtrl'
       })
-      .otherwise('/');
+      .state('profile', {
+        url: '/profile',
+        templateUrl: 'partials/profile.html',
+        controller: 'ProfileCtrl',
+        resolve: {
+          loginRequired: loginRequired
+        }
+      });
 
-    $authProvider.loginUrl = 'https://snowpro.herokuapp.com/auth/login';
-    $authProvider.signupUrl = 'https://snowpro.herokuapp.com/auth/signup';
-    $authProvider.oauth2({
-      name: 'instagram',
-      url: 'https://snowpro.herokuapp.com/auth/instagram',
-      redirectUri: 'https://jonschwadron.github.io/snowpro_client/index.html',
-      clientId: 'a3d34fd164894c35aaed50d4ff55e3ca',
-      requiredUrlParams: ['scope'],
-      scope: ['likes'],
-      scopeDelimiter: '+',
-      authorizationEndpoint: 'https://api.instagram.com/oauth/authorize'
+    $urlRouterProvider.otherwise('/');
+
+    $authProvider.facebook({
+      clientId: '657854390977827'
     });
-  })
-  .run(function($rootScope, $window, $auth) {
-    if ($auth.isAuthenticated()) {
-      $rootScope.currentUser = JSON.parse($window.localStorage.currentUser);
+
+    $authProvider.google({
+      clientId: '631036554609-v5hm2amv4pvico3asfi97f54sc51ji4o.apps.googleusercontent.com'
+    });
+
+    $authProvider.github({
+      clientId: '0ba2600b1dbdb756688b'
+    });
+
+    $authProvider.linkedin({
+      clientId: '77cw786yignpzj'
+    });
+
+    $authProvider.instagram({
+      clientId: '799d1f8ea0e44ac8b70e7f18fcacedd1'
+    });
+
+    $authProvider.yahoo({
+      clientId: 'dj0yJmk9SDVkM2RhNWJSc2ZBJmQ9WVdrOWIzVlFRMWxzTXpZbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD0yYw--'
+    });
+
+    $authProvider.twitter({
+      url: '/auth/twitter'
+    });
+
+    $authProvider.live({
+      clientId: '000000004C12E68D'
+    });
+
+    $authProvider.twitch({
+      clientId: 'qhc3lft06xipnmndydcr3wau939a20z'
+    });
+
+    $authProvider.bitbucket({
+      clientId: '48UepjQDYaZFuMWaDj'
+    });
+
+    $authProvider.oauth2({
+      name: 'foursquare',
+      url: '/auth/foursquare',
+      clientId: 'MTCEJ3NGW2PNNB31WOSBFDSAD4MTHYVAZ1UKIULXZ2CVFC2K',
+      redirectUri: window.location.origin || window.location.protocol + '//' + window.location.host,
+      authorizationEndpoint: 'https://foursquare.com/oauth2/authenticate'
+    });
+
+    function skipIfLoggedIn($q, $auth) {
+      var deferred = $q.defer();
+      if ($auth.isAuthenticated()) {
+        deferred.reject();
+      } else {
+        deferred.resolve();
+      }
+      return deferred.promise;
+    }
+
+    function loginRequired($q, $location, $auth) {
+      var deferred = $q.defer();
+      if ($auth.isAuthenticated()) {
+        deferred.resolve();
+      } else {
+        $location.path('/login');
+      }
+      return deferred.promise;
     }
   });

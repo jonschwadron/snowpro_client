@@ -1,13 +1,6 @@
-angular.module('Instagram')
-  .controller('NavbarCtrl', function($scope, $rootScope, $window, $auth) {
-
+angular.module('MyApp')
+  .controller('NavbarCtrl', function($scope, $auth) {
     $scope.isAuthenticated = function() {
       return $auth.isAuthenticated();
     };
-
-    $scope.logout = function() {
-      $auth.logout();
-      delete $window.localStorage.currentUser;
-    };
-
   });
