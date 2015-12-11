@@ -1,34 +1,64 @@
 <div class="container">
   <div class="panel panel-default">
-    <div class="panel-heading">Gears</div>
+    <div class="panel-heading">Snowboard</div>
     <div class="panel-body">
-      <legend><i class="ion-clipboard"></i> Edit My Gears</legend>
+      <legend><i class="ion-clipboard"></i> Current Snowboard Setup</legend>
 
       <form method="post" ng-submit="updateGears()">
 
         <div class="row">
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <div class="form-group">
               <label class="control-label">Gear Picture</label>
               <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-sm-6">
+          <div class="col-sm-12">
 
             <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard</label>
-              <input type="text" class="form-control" ng-model="user.snowboard" />
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard Brand</label>
+              <input type="text" class="form-control" ng-model="snowboard.brand" />
             </div>
 
             <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings</label>
-              <input type="text" class="form-control" ng-model="user.bindings" />
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard Model</label>
+              <input type="text" class="form-control" ng-model="snowboard.brand.model" />
             </div>
 
             <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Boots</label>
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard Size</label>
+              <input type="text" class="form-control" ng-model="snowboard.size" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings Brand</label>
+              <input type="text" class="form-control" ng-model="snowboard.bindings" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings Model</label>
+              <input type="text" class="form-control" ng-model="snowboard.bindings.model" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings Size</label>
+              <input type="text" class="form-control" ng-model="snowboard.bindings.size" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Boots Brand</label>
               <input type="text" class="form-control" ng-model="user.boots" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Boots Model</label>
+              <input type="text" class="form-control" ng-model="snowboard.boots.model" />
+            </div>
+
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Boots Size</label>
+              <input type="text" class="form-control" ng-model="snowboard.boots.size" />
             </div>
           </div>
         </div>
@@ -38,7 +68,6 @@
 
     </div>
   </div>
-
 
   <div class="panel panel-default">
     <div class="panel-heading">Previous Setups</div>
