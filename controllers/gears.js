@@ -12,7 +12,7 @@ angular.module('MyApp')
     $scope.updateGears = function() {
       Account.updateGears($scope.user)
         .then(function() {
-          toastr.success('Gear has been updated');
+          toastr.success('Gears has been updated');
         })
         .catch(function(response) {
           toastr.error(response.data.message, response.status);

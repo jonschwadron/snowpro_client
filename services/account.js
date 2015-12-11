@@ -2,10 +2,15 @@ angular.module('MyApp')
   .factory('Account', function($http) {
     return {
       getProfile: function() {
-        // return $http.get('/api/me');
         return $http.get('https://snowpro.herokuapp.com/api/me');
       },
       updateProfile: function(profileData) {
+        return $http.put('https://snowpro.herokuapp.com/api/me', profileData);
+      },
+      getGears: function() {
+        return $http.get('https://snowpro.herokuapp.com/api/me');
+      },
+      updateGears: function(profileData) {
         return $http.put('https://snowpro.herokuapp.com/api/me', profileData);
       }
     };
