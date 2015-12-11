@@ -21,10 +21,11 @@
       <ul class="nav navbar-nav">
         <li><a href="#/">Home</a></li>
         <li ng-if="isAuthenticated()"><a href="#/profile">Profile</a></li>
+        <li ng-if="isAuthenticated()"><a href="#/gear">Gear</a></li>
       </ul>
 
       <ul class="nav navbar-nav pull-right">
-        <li><a href="#/">Version: 0.0.9</a></li>
+        <li><a href="#/">Version: 0.0.10</a></li>
       </ul>
 
       <ul ng-if="!isAuthenticated()" class="nav navbar-nav pull-right">

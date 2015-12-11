@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Gear</div>
+    <div class="panel-body">
+      <legend><i class="ion-clipboard"></i> Edit My Gear</legend>
+
+
+      <form method="post" ng-submit="updateGear()">
+        <div class="form-group">
+          <label class="control-label">Gear Picture</label>
+          <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
+        </div>
+        <div class="form-group">
+          <label class="control-label"><i class="ion-person"></i> Snowboard</label>
+          <input type="text" class="form-control" ng-model="user.snowboard" />
+        </div>
+        <div class="form-group">
+          <label class="control-label"><i class="ion-at"></i> Binding</label>
+          <input type="email" class="form-control" ng-model="user.binding" />
+        </div>
+        <button class="btn btn-lg btn-success">Update</button>
+      </form>
+
+
+    </div>
+  </div>
+</div>
