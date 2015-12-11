@@ -7,11 +7,29 @@ angular.module('MyApp')
       updateProfile: function(profileData) {
         return $http.put('https://snowpro.herokuapp.com/api/me', profileData);
       },
-      getGears: function() {
-        return $http.get('https://snowpro.herokuapp.com/api/gears');
+      // getGears: function() {
+      //   return $http.get('https://snowpro.herokuapp.com/api/gears');
+      // },
+      // updateGears: function(gearsData) {
+      //   return $http.put('https://snowpro.herokuapp.com/api/gears', gearsData);
+      // },
+      getSnowboard: function() {
+        return $http.get('https://snowpro.herokuapp.com/api/snowboard');
       },
-      updateGears: function(gearsData) {
-        return $http.put('https://snowpro.herokuapp.com/api/gears', gearsData);
+      updateSnowboard: function(snowboardData) {
+        return $http.put('https://snowpro.herokuapp.com/api/snowboard', snowboardData);
+      },
+      getBindings: function() {
+        return $http.get('https://snowpro.herokuapp.com/api/bindings');
+      },
+      updateBindings: function(bindingsData) {
+        return $http.put('https://snowpro.herokuapp.com/api/bindings', bindingsData);
+      },
+      getBoots: function() {
+        return $http.get('https://snowpro.herokuapp.com/api/boots');
+      },
+      updateBoots: function(bootsData) {
+        return $http.put('https://snowpro.herokuapp.com/api/boots', bootsData);
       }
     };
   });
