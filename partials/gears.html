@@ -3,10 +3,11 @@
     <div class="panel-heading">Gears</div>
     <div class="panel-body">
       <div class="row">
+        <legend><i class="ion-clipboard"></i> Edit My Gears</legend>
 
-        <div class="col-sm-6">
-          <legend><i class="ion-clipboard"></i> Edit My Gears</legend>
-          <form method="post" ng-submit="updateGears()">
+        <form method="post" ng-submit="updateGears()">
+
+          <div class="col-sm-6">
             <div class="form-group">
               <label class="control-label">Gear Picture</label>
               <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
@@ -14,21 +15,25 @@
           </div>
 
           <div class="col-sm-6">
+
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard</label>
               <input type="text" class="form-control" ng-model="user.snowboard" />
             </div>
+
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings</label>
               <input type="text" class="form-control" ng-model="user.bindings" />
             </div>
+
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Boots</label>
               <input type="text" class="form-control" ng-model="user.boots" />
             </div>
-            <button class="btn btn-lg btn-success">Update</button>
-          </form>
-        </div>
+          </div>
+
+          <button class="btn btn-lg btn-success">Update</button>
+        </form>
 
       </div>
     </div>
@@ -36,12 +41,12 @@
 
 
   <div class="panel panel-default">
-    <div class="panel-heading">Past Setup</div>
+    <div class="panel-heading">Previous Setups</div>
       <div class="panel-body">
         <div class="row">
 
         <div class="col-sm-12">
-          <legend><i class="ion-calendar"></i> Past Setups</legend>
+          <legend><i class="ion-calendar"></i> Previous Setups</legend>
 
           <div class="form-group">
             <label class="control-label">2014</label>
