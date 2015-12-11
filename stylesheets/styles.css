@@ -189,6 +189,11 @@ ul {
   display: block;
 }
 
+.profile-picture-large {
+  height: 300px;
+  display: block;
+}
+
 .btn {
   font-weight: bold;
   border-radius: 2px;
