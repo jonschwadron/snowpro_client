@@ -23,7 +23,8 @@ ul {
 }
 
 .stylish-input-group .input-group-addon{
-    background: white !important;
+  background: white !important;
+  padding-bottom: -1px;
 }
 .stylish-input-group .form-control{
 	border-right:0;
