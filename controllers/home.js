@@ -9,7 +9,37 @@ angular.module('MyApp')
           toastr.error(response.data.message, response.status);
         });
     };
+    $scope.getSnowboard = function() {
+      Account.getSnowboard()
+        .then(function(response) {
+          $scope.user = response.data;
+        })
+        .catch(function(response) {
+          toastr.error(response.data.message, response.status);
+        });
+    };
+    $scope.getBindings = function() {
+      Account.getBindings()
+        .then(function(response) {
+          $scope.user = response.data;
+        })
+        .catch(function(response) {
+          toastr.error(response.data.message, response.status);
+        });
+    };
+    $scope.getBoots = function() {
+      Account.getBoots()
+        .then(function(response) {
+          $scope.user = response.data;
+        })
+        .catch(function(response) {
+          toastr.error(response.data.message, response.status);
+        });
+    };
     $scope.getProfile();
+    $scope.getSnowboard();
+    $scope.getBindings();
+    $scope.getBoots();
 
     $http.jsonp('//api.github.com/repos/sahat/satellizer?callback=JSON_CALLBACK')
       .success(function(data) {
