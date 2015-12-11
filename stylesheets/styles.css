@@ -18,8 +18,8 @@ ul {
 
 .searchbox {
   width: 400px;
-  margin-top: 9px;
-  margin-left: 9px;
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
 .stylish-input-group .input-group-addon{
@@ -83,6 +83,7 @@ ul {
 }
 
 .navbar-brand {
+  width: 150px;
   margin-left: -15px;
   transition: 0.25s all;
 }
