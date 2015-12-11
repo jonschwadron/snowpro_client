@@ -19,5 +19,5 @@ angular.module('MyApp')
         });
     };
 
-    $scope.getGear();
+    $scope.getGears();
   });
