@@ -35,7 +35,6 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
           loginRequired: loginRequired
         }
       })
-
       .state('gear', {
         url: '/gear',
         templateUrl: 'partials/gear.html',
@@ -43,9 +42,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
         resolve: {
           loginRequired: loginRequired
         }
-      })
-
-      ;
+      });
 
     $urlRouterProvider.otherwise('/');
 
