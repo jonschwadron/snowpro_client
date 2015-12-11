@@ -4,7 +4,10 @@
       <div class="panel panel-default">
         <div class="panel-heading">Profile</div>
         <div class="panel-body">
-          <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/300x300'}}">
+          <div class="row">
+            <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/300x300'}}">
+          </div>
+
           <ul class="list-group">
             <li class="list-group-item">{{user.displayName}}</li>
             <li class="list-group-item">Age: </li>
