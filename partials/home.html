@@ -1,20 +1,24 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-4">
       <div class="panel panel-default">
         <div class="panel-heading">Profile</div>
         <div class="panel-body">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.</p>
+          <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/200x200'}}">
+          <ul>
+            <li>{{user.displayName}}</li>
+            <li>Age: </li>
+            <li>Weight: </li>
+            <li>Skill Level: </li>
+            <li>Local Mountain: </li>
+            <li>Country: </li>
+          </ul>
           <p><a class="btn btn-primary" href="#">View details »</a></p>
         </div>
       </div>
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-sm-8">
       <div class="panel panel-default">
         <div class="panel-heading">Gears</div>
         <div class="panel-body">
