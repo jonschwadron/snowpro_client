@@ -37,7 +37,7 @@ angular.module('MyApp')
         });
     };
     $scope.getBindings = function() {
-      Account.getBinding()
+      Account.getBindings()
         .then(function(response) {
           $scope.user = response.data;
         })
