@@ -5,13 +5,13 @@
         <div class="panel-heading">Profile</div>
         <div class="panel-body">
           <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/300x300'}}">
-          <ul>
-            <li>{{user.displayName}}</li>
-            <li>Age: </li>
-            <li>Weight: </li>
-            <li>Skill Level: </li>
-            <li>Local Mountain: </li>
-            <li>Country: </li>
+          <ul class="list-group">
+            <li class="list-group-item">{{user.displayName}}</li>
+            <li class="list-group-item">Age: </li>
+            <li class="list-group-item">Weight: </li>
+            <li class="list-group-item">Skill Level: </li>
+            <li class="list-group-item">Local Mountain: </li>
+            <li class="list-group-item">Country: </li>
           </ul>
           <p><a class="btn btn-primary" href="#">View details »</a></p>
         </div>
