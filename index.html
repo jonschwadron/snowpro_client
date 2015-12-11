@@ -25,7 +25,7 @@
       </ul>
 
       <ul class="nav navbar-nav pull-right">
-        <li><a href="#/">Version: 0.0.35</a></li>
+        <li><a href="#/">Version: 0.0.36</a></li>
       </ul>
 
       <ul ng-if="!isAuthenticated()" class="nav navbar-nav pull-right">
@@ -35,20 +35,14 @@
       <ul ng-if="isAuthenticated()" class="nav navbar-nav pull-right">
         <li><a href="#/logout">Logout</a></li>
         <li>
-          <div class="row searchbox">
-            <div class="col-sm-2 pull-right">
-              <div id="imaginary_container">
-                <div class="input-group stylish-input-group">
-                  <input type="text" class="form-control"  placeholder="Search" >
-                    <span class="input-group-addon">
-                      <button type="submit">
-                        <span class="glyphicon glyphicon-search"></span>
-                      </button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="input-group stylish-input-group">
+            <input type="text" class="form-control" placeholder="Search" />
+            <span class="input-group-addon">
+              <button type="submit">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
         </li>
       </ul>
     </div>
