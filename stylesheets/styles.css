@@ -55,11 +55,11 @@ ul {
 
 .navbar-default .navbar-brand {
   color: #333;
-  background-color: #ffe939;
+  background-color: rgb(0, 156, 255);;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #ffe939;
+  color: rgb(0, 156, 255);
   background-color: #333;
 }
 
