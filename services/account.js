@@ -8,10 +8,10 @@ angular.module('MyApp')
         return $http.put('https://snowpro.herokuapp.com/api/me', profileData);
       },
       getGears: function() {
-        return $http.get('https://snowpro.herokuapp.com/api/me');
+        return $http.get('https://snowpro.herokuapp.com/api/gears');
       },
       updateGears: function(gearsData) {
-        return $http.put('https://snowpro.herokuapp.com/api/me', gearsData);
+        return $http.put('https://snowpro.herokuapp.com/api/gears', gearsData);
       }
     };
   });

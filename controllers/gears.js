@@ -20,5 +20,4 @@ angular.module('MyApp')
     };
 
     $scope.getGears();
-    console.log(response.data);
   });
