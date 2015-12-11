@@ -35,9 +35,9 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
           loginRequired: loginRequired
         }
       })
-      .state('gear', {
-        url: '/gear',
-        templateUrl: 'partials/gear.html',
+      .state('gears', {
+        url: '/gears',
+        templateUrl: 'partials/gears.html',
         controller: 'GearCtrl',
         resolve: {
           loginRequired: loginRequired

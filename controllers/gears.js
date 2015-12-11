@@ -1,7 +1,7 @@
 angular.module('MyApp')
-  .controller('GearCtrl', function($scope, $auth, toastr, Account) {
-    $scope.getGear = function() {
-      Account.getGear()
+  .controller('GearsCtrl', function($scope, $auth, toastr, Account) {
+    $scope.getGears = function() {
+      Account.getGears()
         .then(function(response) {
           $scope.user = response.data;
         })
@@ -9,8 +9,8 @@ angular.module('MyApp')
           toastr.error(response.data.message, response.status);
         });
     };
-    $scope.updateGear = function() {
-      Account.updateGear($scope.user)
+    $scope.updateGears = function() {
+      Account.updateGears($scope.user)
         .then(function() {
           toastr.success('Gear has been updated');
         })
@@ -19,5 +19,5 @@ angular.module('MyApp')
         });
     };
 
-    // $scope.getGear();
+    $scope.getGear();
   });
