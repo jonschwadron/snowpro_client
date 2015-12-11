@@ -10,8 +10,8 @@ angular.module('MyApp')
       getGears: function() {
         return $http.get('https://snowpro.herokuapp.com/api/me');
       },
-      updateGears: function(profileData) {
-        return $http.put('https://snowpro.herokuapp.com/api/me', profileData);
+      updateGears: function(gearsData) {
+        return $http.put('https://snowpro.herokuapp.com/api/me', gearsData);
       }
     };
   });
