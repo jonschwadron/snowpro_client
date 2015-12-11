@@ -1,12 +1,12 @@
 angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.router', 'satellizer'])
   .config(function($stateProvider, $urlRouterProvider, $authProvider) {
     $stateProvider
-      .state('home', {
+      .state('/home', {
         url: '/',
         controller: 'HomeCtrl',
         templateUrl: 'partials/home.html'
       })
-      .state('login', {
+      .state('/login', {
         url: '/login',
         templateUrl: 'partials/login.html',
         controller: 'LoginCtrl',
@@ -14,7 +14,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
           skipIfLoggedIn: skipIfLoggedIn
         }
       })
-      .state('signup', {
+      .state('/signup', {
         url: '/signup',
         templateUrl: 'partials/signup.html',
         controller: 'SignupCtrl',
@@ -22,12 +22,12 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
           skipIfLoggedIn: skipIfLoggedIn
         }
       })
-      .state('logout', {
+      .state('/logout', {
         url: '/logout',
         template: null,
         controller: 'LogoutCtrl'
       })
-      .state('profile', {
+      .state('/profile', {
         url: '/profile',
         templateUrl: 'partials/profile.html',
         controller: 'ProfileCtrl',
@@ -101,7 +101,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       if ($auth.isAuthenticated()) {
         deferred.resolve();
       } else {
-        $location.path('/login');
+        $location.path('login');
       }
       return deferred.promise;
     }
