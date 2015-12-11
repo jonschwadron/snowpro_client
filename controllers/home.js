@@ -1,5 +1,16 @@
 angular.module('MyApp')
-  .controller('HomeCtrl', function($scope, $http) {
+  .controller('HomeCtrl', function($scope, $http, toastr, Account) {
+    $scope.getProfile = function() {
+      Account.getProfile()
+        .then(function(response) {
+          $scope.user = response.data;
+        })
+        .catch(function(response) {
+          toastr.error(response.data.message, response.status);
+        });
+    };
+    $scope.getProfile();
+
     $http.jsonp('//api.github.com/repos/sahat/satellizer?callback=JSON_CALLBACK')
       .success(function(data) {
         if (data) {
