@@ -2,34 +2,39 @@
   <div class="panel panel-default">
     <div class="panel-heading">Gear</div>
     <div class="panel-body">
-      <legend><i class="ion-clipboard"></i> Edit My Gear</legend>
 
 
-      <form method="post" ng-submit="updateGear()">
-        <div class="form-group">
-          <label class="control-label">Gear Picture</label>
-          <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
-        </div>
-        <div class="form-group">
-          <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard</label>
-          <input type="text" class="form-control" ng-model="user.snowboard" />
-        </div>
-        <div class="form-group">
-          <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings</label>
-          <input type="text" class="form-control" ng-model="user.bindings" />
-        </div>
-        <div class="form-group">
-          <label class="control-label"><i class="ion-arrow-right-b"></i> Boots</label>
-          <input type="text" class="form-control" ng-model="user.boots" />
+      <div class="row">
+        <div class="col-sm-6">
+          <legend><i class="ion-clipboard"></i> Edit My Gear</legend>
+          <form method="post" ng-submit="updateGear()">
+            <div class="form-group">
+              <label class="control-label">Gear Picture</label>
+              <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
+            </div>
+          </div>
         </div>
 
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard</label>
+              <input type="text" class="form-control" ng-model="user.snowboard" />
+            </div>
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings</label>
+              <input type="text" class="form-control" ng-model="user.bindings" />
+            </div>
+            <div class="form-group">
+              <label class="control-label"><i class="ion-arrow-right-b"></i> Boots</label>
+              <input type="text" class="form-control" ng-model="user.boots" />
+            </div>
+            <button class="btn btn-lg btn-success">Update</button>
+          </form>
+        </div>
+      </div>
 
 
-
-
-
-        <button class="btn btn-lg btn-success">Update</button>
-      </form>
 
 
     </div>
