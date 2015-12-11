@@ -22,6 +22,7 @@
         <li><a href="#/">Home</a></li>
         <li ng-if="isAuthenticated()"><a href="#/profile">Profile</a></li>
         <li ng-if="isAuthenticated()"><a href="#/gears">Gears</a></li>
+        <li ng-if="isAuthenticated()"><a href="#/new">New</a></li>
       </ul>
 
       <ul class="nav navbar-nav pull-right">
@@ -60,6 +61,7 @@
     <script src="controllers/profile.js"></script>
     <script src="controllers/navbar.js"></script>
     <script src="controllers/gears.js"></script>
+    <script src="controllers/new.js"></script>
     <script src="services/account.js"></script>
   </body>
 </html>
