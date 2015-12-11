@@ -1,36 +1,52 @@
 <div class="container">
+
   <div class="panel panel-default">
     <div class="panel-heading">Snowboard</div>
     <div class="panel-body">
-      <legend><i class="ion-clipboard"></i> Current Snowboard Setup</legend>
-
+      <legend><i class="ion-clipboard"></i> Current Snowboard</legend>
       <form method="post" ng-submit="updateGears()">
-
         <div class="row">
-          <!-- <div class="col-sm-6">
+          <div class="col-sm-6">
             <div class="form-group">
               <label class="control-label">Gear Picture</label>
               <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
             </div>
-          </div> -->
-
-          <div class="col-sm-12">
-
+          </div>
+          <div class="col-sm-6">
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard Brand</label>
               <input type="text" class="form-control" ng-model="snowboard.brand" />
             </div>
-
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard Model</label>
               <input type="text" class="form-control" ng-model="snowboard.brand.model" />
             </div>
-
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Snowboard Size</label>
               <input type="text" class="form-control" ng-model="snowboard.size" />
             </div>
+          </div>
+        </div>
 
+        <button class="btn btn-lg btn-success pull-right">Update</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Bindings</div>
+    <div class="panel-body">
+      <legend><i class="ion-clipboard"></i> Current Bindings</legend>
+      <form method="post" ng-submit="updateGears()">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label">Gear Picture</label>
+              <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
+            </div>
+          </div>
+
+          <div class="col-sm-6">
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings Brand</label>
               <input type="text" class="form-control" ng-model="snowboard.bindings" />
@@ -45,15 +61,35 @@
               <label class="control-label"><i class="ion-arrow-right-b"></i> Bindings Size</label>
               <input type="text" class="form-control" ng-model="snowboard.bindings.size" />
             </div>
+          </div>
+        </div>
+        <button class="btn btn-lg btn-success pull-right">Update</button>
+      </form>
+    </div>
+  </div>
 
+  <div class="panel panel-default">
+    <div class="panel-heading">Boots</div>
+    <div class="panel-body">
+      <legend><i class="ion-clipboard"></i> Current Boots</legend>
+      <form method="post" ng-submit="updateGears()">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label">Gear Picture</label>
+              <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
+            </div>
+          </div>
+
+          <div class="col-sm-6">
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Boots Brand</label>
-              <input type="text" class="form-control" ng-model="user.boots" />
+              <input type="text" class="form-control" ng-model="boots.brand" />
             </div>
 
             <div class="form-group">
               <label class="control-label"><i class="ion-arrow-right-b"></i> Boots Model</label>
-              <input type="text" class="form-control" ng-model="snowboard.boots.model" />
+              <input type="text" class="form-control" ng-model="boots.model" />
             </div>
 
             <div class="form-group">
@@ -62,45 +98,43 @@
             </div>
           </div>
         </div>
-
-      <button class="btn btn-lg btn-success pull-right">Update</button>
-    </form>
-
+        <button class="btn btn-lg btn-success pull-right">Update</button>
+      </form>
     </div>
   </div>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Previous Setups</div>
-      <div class="panel-body">
-        <div class="row">
+<div class="panel panel-default">
+  <div class="panel-heading">Previous Setups</div>
+  <div class="panel-body">
+    <div class="row">
 
-        <div class="col-sm-12">
-          <legend><i class="ion-calendar"></i> Previous Setups</legend>
+      <div class="col-sm-12">
+        <legend><i class="ion-calendar"></i> Previous Setups</legend>
 
-          <div class="form-group">
-            <label class="control-label">2014</label>
-            <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
-          </div>
-
-          <div class="form-group">
-            <label class="control-label">2013</label>
-            <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
-          </div>
-
-          <div class="form-group">
-            <label class="control-label">2012</label>
-            <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
-          </div>
-
-          <div class="form-group">
-            <label class="control-label">2011</label>
-            <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
-          </div>
+        <div class="form-group">
+          <label class="control-label">2014</label>
+          <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
         </div>
 
+        <div class="form-group">
+          <label class="control-label">2013</label>
+          <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">2012</label>
+          <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">2011</label>
+          <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
+        </div>
       </div>
 
-
     </div>
+
+
   </div>
+</div>
 </div>
