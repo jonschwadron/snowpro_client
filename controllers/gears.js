@@ -78,6 +78,7 @@ angular.module('MyApp')
     $scope.getBoots();
   });
 
+angular.module('MyApp', ['ngAnimate', 'ui.bootstrap']);
 angular.module('MyApp')
   .controller('ModalDemoCtrl', function ($scope, $uibModal, $log) {
 
