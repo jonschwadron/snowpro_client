@@ -7,12 +7,6 @@ angular.module('MyApp')
       updateProfile: function(profileData) {
         return $http.put('https://snowpro.herokuapp.com/api/profile', profileData);
       },
-      // getGears: function() {
-      //   return $http.get('https://snowpro.herokuapp.com/api/gears');
-      // },
-      // updateGears: function(gearsData) {
-      //   return $http.put('https://snowpro.herokuapp.com/api/gears', gearsData);
-      // },
       getSnowboard: function() {
         return $http.get('https://snowpro.herokuapp.com/api/snowboard');
       },
