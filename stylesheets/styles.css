@@ -443,3 +443,8 @@ ul {
     opacity: 1;
   }
 }
+
+.form-group {
+  padding: 5px;
+
+}
