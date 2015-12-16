@@ -32,9 +32,9 @@
         <button class="btn btn-lg btn-primary pull-right">Update</button>
       </form>
 
-      <div>
+      <div class="container">
         <button ng-click="toggleModal()" class="btn btn-lg btn-primary pull-right">Add a review</button>
-        <modal title="What did you think of the {{user.snowboardBrand}} {{user.snowboardModel}}?" visible="showModal">
+        <modal title="How did you like your snowboard?" visible="showModal">
           <form role="form">
             <div class="form-group">
               <label for="brand">Manufacturer</label>
@@ -50,7 +50,21 @@
             </div>
             <div class="form-group">
               <label for="flex">Flex</label>
-              <input type="text" class="form-control" id="flex" />
+              <div class="radio">
+                <label><input type="radio" name="optionFlex">1</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optionFlex">2</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optionFlex">3</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optionFlex">4</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optionFlex">5</label>
+              </div>
             </div>
             <div class="form-group">
               <label for="speed">Speed</label>
