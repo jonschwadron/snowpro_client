@@ -1,8 +1,32 @@
 angular.module('MyApp')
+  .controller('GearsCtrl', function($scope) {
+    $scope.showModalSnowboardReview = false;
+    $scope.showModalBindingsReview = false;
+    $scope.showModalBootsReview = false;
+    $scope.toggleModalSnowboardReview = function(){
+        $scope.showModalSnowboardReview = !$scope.showModalSnowboardReview;
+    };
+    $scope.toggleModalBindingsReview = function(){
+        $scope.showModalBindingsReview = !$scope.showModalBindingsReview;
+    };
+    $scope.toggleModalBootsReview = function(){
+        $scope.showModalBootsReview = !$scope.showModalBootsReview;
+    };
+  });
+
+angular.module('MyApp')
   .controller('GearsCtrl', function($scope, $auth, toastr, Account) {
-    $scope.showModal = false;
-    $scope.toggleModal = function(){
-        $scope.showModal = !$scope.showModal;
+    $scope.showModalSnowboardReview = false;
+    $scope.showModalBindingsReview = false;
+    $scope.showModalBootsReview = false;
+    $scope.toggleModalSnowboardReview = function(){
+        $scope.showModalSnowboardReview = !$scope.showModalSnowboardReview;
+    };
+    $scope.toggleModalBindingsReview = function(){
+        $scope.showModalBindingsReview = !$scope.showModalBindingsReview;
+    };
+    $scope.toggleModalBootsReview = function(){
+        $scope.showModalBootsReview = !$scope.showModalBootsReview;
     };
     // $scope.getGears = function() {
     //   Account.getGears()
