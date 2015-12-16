@@ -31,8 +31,8 @@
 
         <button class="btn btn-lg btn-primary pull-right">Update</button>
       </form>
-      <div ng-controller="MainCtrl">
-        <button ng-click="toggleModal()" class="btn btn-lg btn-primary pull-right">Add a review of {{user.snowboardModel || "snowboard"}}.</button>
+      <div ng-controller="MainCtrl" class="container">
+        <button ng-click="toggleModal()" class="btn btn-lg btn-primary pull-right">Add a review</button>
         <modal title="Login form" visible="showModal">
           <form role="form">
             <div class="form-group">
