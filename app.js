@@ -38,10 +38,10 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
           loginRequired: loginRequired
         }
       })
-      .state('gears', {
-        url: '/gears',
-        templateUrl: 'partials/gears.html',
-        controller: 'GearsCtrl',
+      .state('inventory', {
+        url: '/inventory',
+        templateUrl: 'partials/inventory.html',
+        controller: 'InventoryCtrl',
         resolve: {
           loginRequired: loginRequired
         }

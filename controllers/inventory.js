@@ -40,7 +40,7 @@ angular.module('MyApp')
     // $scope.updateGears = function() {
     //   Account.updateGears($scope.user)
     //     .then(function() {
-    //       toastr.success('Gears has been updated');
+    //       toastr.success('Inventory has been updated');
     //     })
     //     .catch(function(response) {
     //       toastr.error(response.data.message, response.status);
