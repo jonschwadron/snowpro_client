@@ -17,8 +17,10 @@ ul {
 }
 
 .modal {
-  width: 750px;
-  margin-left: 375px;
+  width: 90%;
+  left: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .searchbox {
