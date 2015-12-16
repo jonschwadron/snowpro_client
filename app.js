@@ -45,10 +45,19 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
         resolve: {
           loginRequired: loginRequired
         }
-      }).state('news', {
+      })
+      .state('news', {
         url: '/news',
         templateUrl: 'partials/news.html',
         controller: 'NewsCtrl',
+        resolve: {
+          loginRequired: loginRequired
+        }
+      })
+      .state('map', {
+        url: '/map',
+        templateUrl: 'partials/map.html',
+        controller: 'MapCtrl',
         resolve: {
           loginRequired: loginRequired
         }
