@@ -1,5 +1,5 @@
 angular.module('MyApp')
-  .controller('GearsCtrl', function($scope) {
+  .controller('InventoryCtrl', function($scope) {
     $scope.showModalSnowboardReview = false;
     $scope.showModalBindingsReview = false;
     $scope.showModalBootsReview = false;
@@ -15,7 +15,7 @@ angular.module('MyApp')
   });
 
 angular.module('MyApp')
-  .controller('GearsCtrl', function($scope, $auth, toastr, Account) {
+  .controller('InventoryCtrl', function($scope, $auth, toastr, Account) {
     $scope.showModalSnowboardReview = false;
     $scope.showModalBindingsReview = false;
     $scope.showModalBootsReview = false;
