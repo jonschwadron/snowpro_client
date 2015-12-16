@@ -154,130 +154,130 @@
                   <div class="pull-right">
                     <label class="radio-inline"><input type="radio" name="optionWouldRecommend">Yes</label>
                     <label class="radio-inline"><input type="radio" name="optionWouldRecommend">No</label>
-                  <div class="pull-right">
+                    <div class="pull-right">
+                    </div>
+                  </div>
                 </div>
-                </div>
-              </div>
 
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-default pull-right">Submit</button>
+                      <!-- <label for="model">Size</label>
+                      <input type="text" class="form-control" id="size" placeholder="size" /> -->
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </modal>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Bindings</div>
+        <div class="panel-body">
+          <legend><i class="ion-clipboard"></i> Current Bindings</legend>
+          <form method="post" ng-submit="updateBindings()">
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-sm-6">
                 <div class="form-group">
-                  <button type="submit" class="btn btn-default pull-right">Submit</button>
-                  <!-- <label for="model">Size</label>
-                  <input type="text" class="form-control" id="size" placeholder="size" /> -->
+                  <label class="control-label">Bindings Picture</label>
+                  <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="control-label"><i class="ion-arrow-right-b"></i> Brand</label>
+                  <input type="text" class="form-control" ng-model="user.bindingsBrand" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label"><i class="ion-arrow-right-b"></i> Model</label>
+                  <input type="text" class="form-control" ng-model="user.bindingsModel" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label"><i class="ion-arrow-right-b"></i> Size</label>
+                  <input type="text" class="form-control" ng-model="user.bindingsSize" />
                 </div>
               </div>
             </div>
-
-
+            <button class="btn btn-lg btn-success pull-right">Update Bindings</button>
           </form>
-        </modal>
-      </div>
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">Bindings</div>
-    <div class="panel-body">
-      <legend><i class="ion-clipboard"></i> Current Bindings</legend>
-      <form method="post" ng-submit="updateBindings()">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label class="control-label">Bindings Picture</label>
-              <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Brand</label>
-              <input type="text" class="form-control" ng-model="user.bindingsBrand" />
-            </div>
-
-            <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Model</label>
-              <input type="text" class="form-control" ng-model="user.bindingsModel" />
-            </div>
-
-            <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Size</label>
-              <input type="text" class="form-control" ng-model="user.bindingsSize" />
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-lg btn-success pull-right">Update Bindings</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">Boots</div>
-    <div class="panel-body">
-      <legend><i class="ion-clipboard"></i> Current Boots</legend>
-      <form method="post" ng-submit="updateBoots()">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label class="control-label">Boots Picture</label>
-              <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Brand</label>
-              <input type="text" class="form-control" ng-model="user.bootsBrand" />
-            </div>
-
-            <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Model</label>
-              <input type="text" class="form-control" ng-model="user.bootsModel" />
-            </div>
-
-            <div class="form-group">
-              <label class="control-label"><i class="ion-arrow-right-b"></i> Size</label>
-              <input type="text" class="form-control" ng-model="user.bootsSize" />
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-lg btn-success pull-right">Update Boots</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">Previous Setups</div>
-    <div class="panel-body">
-      <div class="row">
-
-      <div class="col-sm-12">
-        <legend><i class="ion-calendar"></i> Previous Setups</legend>
-
-        <div class="form-group">
-          <label class="control-label">2014</label>
-          <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
-        </div>
-
-        <div class="form-group">
-          <label class="control-label">2013</label>
-          <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
-        </div>
-
-        <div class="form-group">
-          <label class="control-label">2012</label>
-          <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
-        </div>
-
-        <div class="form-group">
-          <label class="control-label">2011</label>
-          <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
         </div>
       </div>
 
+      <div class="panel panel-default">
+        <div class="panel-heading">Boots</div>
+        <div class="panel-body">
+          <legend><i class="ion-clipboard"></i> Current Boots</legend>
+          <form method="post" ng-submit="updateBoots()">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="control-label">Boots Picture</label>
+                  <img class="profile-picture" ng-src="{{user.picture || 'http://placehold.it/100x100'}}">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="control-label"><i class="ion-arrow-right-b"></i> Brand</label>
+                  <input type="text" class="form-control" ng-model="user.bootsBrand" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label"><i class="ion-arrow-right-b"></i> Model</label>
+                  <input type="text" class="form-control" ng-model="user.bootsModel" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label"><i class="ion-arrow-right-b"></i> Size</label>
+                  <input type="text" class="form-control" ng-model="user.bootsSize" />
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-lg btn-success pull-right">Update Boots</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Previous Setups</div>
+        <div class="panel-body">
+          <div class="row">
+
+            <div class="col-sm-12">
+              <legend><i class="ion-calendar"></i> Previous Setups</legend>
+
+              <div class="form-group">
+                <label class="control-label">2014</label>
+                <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
+              </div>
+
+              <div class="form-group">
+                <label class="control-label">2013</label>
+                <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
+              </div>
+
+              <div class="form-group">
+                <label class="control-label">2012</label>
+                <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
+              </div>
+
+              <div class="form-group">
+                <label class="control-label">2011</label>
+                <img class="profile-picture" ng-src="{{'http://placehold.it/100x100'}}">
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
     </div>
-
-
-  </div>
-</div>
-</div>
