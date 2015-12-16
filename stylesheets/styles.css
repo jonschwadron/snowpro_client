@@ -16,6 +16,10 @@ ul {
   margin-bottom: 0;
 }
 
+.modal {
+  width: 560px;
+}
+
 .searchbox {
   width: 300px;
   margin-top: 8px;
