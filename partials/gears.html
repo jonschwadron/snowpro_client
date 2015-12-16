@@ -28,7 +28,7 @@
         </div>
         <button class="btn btn-lg btn-primary pull-right">Update</button>
       </form>
-      <button ng-click="toggleModalSnowboardReview()" class="btn btn-lg btn-primary pull-right">Add a review</button>
+      <button ng-click="toggleModalSnowboardReview()" class="btn btn-lg btn-primary pull-right">Add review</button>
       <modal title="Snowboard Rating System" visible="showModalSnowboardReview">
         <form role="form">
             <div class="row form-group">
@@ -60,11 +60,9 @@
                 <label>Flex</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionFlex">1</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">2</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">3</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">4</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">5</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Soft</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Medium</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Stiff</label>
               </div>
             </div>
             <div class="row form-group">
@@ -214,8 +212,8 @@
         </div>
         <button class="btn btn-lg btn-success pull-right">Update Bindings</button>
       </form>
-      <button ng-click="toggleModalBindingsReview()" class="btn btn-lg btn-primary pull-right">Add a review</button>
-      <modal title="Snowboard Rating System" visible="showModalBindingsReview">
+      <button ng-click="toggleModalBindingsReview()" class="btn btn-lg btn-primary pull-right">Add review</button>
+      <modal title="Snowboard Rating System" visible="showModalBootsReview">
         <form role="form">
             <div class="row form-group">
               <div class="col-sm-5">
@@ -246,64 +244,62 @@
                 <label>Flex</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionFlex">1</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">2</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">3</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">4</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">5</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Soft</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Medium</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Stiff</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Speed</label>
+                <label>Comfort</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionSpeed">1</label>
-                <label class="radio-inline"><input type="radio" name="optionSpeed">2</label>
-                <label class="radio-inline"><input type="radio" name="optionSpeed">3</label>
-                <label class="radio-inline"><input type="radio" name="optionSpeed">4</label>
-                <label class="radio-inline"><input type="radio" name="optionSpeed">5</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">1</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">2</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">3</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">4</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">5</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Stability</label>
+                <label>Responsiveness</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionStability">1</label>
-                <label class="radio-inline"><input type="radio" name="optionStability">2</label>
-                <label class="radio-inline"><input type="radio" name="optionStability">3</label>
-                <label class="radio-inline"><input type="radio" name="optionStability">4</label>
-                <label class="radio-inline"><input type="radio" name="optionStability">5</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">1</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">2</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">3</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">4</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">5</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Switch </label>
+                <label>Ratchet System</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionSwitch">1</label>
-                <label class="radio-inline"><input type="radio" name="optionSwitch">2</label>
-                <label class="radio-inline"><input type="radio" name="optionSwitch">3</label>
-                <label class="radio-inline"><input type="radio" name="optionSwitch">4</label>
-                <label class="radio-inline"><input type="radio" name="optionSwitch">5</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">1</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">2</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">3</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">4</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">5</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Edge Control </label>
+                <label>Adjustability</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">1</label>
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">2</label>
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">3</label>
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">4</label>
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">5</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">1</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">2</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">3</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">4</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">5</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Forgiveness </label>
+                <label>Forgiveness</label>
               </div>
               <div class="col-sm-7">
                 <label class="radio-inline"><input type="radio" name="optionForgiveness">1</label>
@@ -315,7 +311,7 @@
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Park </label>
+                <label>Park</label>
               </div>
               <div class="col-sm-7">
                 <label class="radio-inline"><input type="radio" name="optionPark">1</label>
@@ -327,7 +323,7 @@
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>All Mountain </label>
+                <label>All Mountain</label>
               </div>
               <div class="col-sm-7">
                 <label class="radio-inline"><input type="radio" name="optionAllMountain">1</label>
@@ -339,7 +335,7 @@
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Back Country </label>
+                <label>Back Country</label>
               </div>
               <div class="col-sm-7">
                 <label class="radio-inline"><input type="radio" name="optionBackCountry">1</label>
@@ -401,7 +397,7 @@
         </div>
         <button class="btn btn-lg btn-success pull-right">Update Boots</button>
       </form>
-      <button ng-click="toggleModalBootsReview()" class="btn btn-lg btn-primary pull-right">Add a review</button>
+      <button ng-click="toggleModalBootsReview()" class="btn btn-lg btn-primary pull-right">Add review</button>
       <modal title="Snowboard Rating System" visible="showModalBootsReview">
         <form role="form">
             <div class="row form-group">
@@ -433,64 +429,62 @@
                 <label>Flex</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionFlex">1</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">2</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">3</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">4</label>
-                <label class="radio-inline"><input type="radio" name="optionFlex">5</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Soft</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Medium</label>
+                <label class="radio-inline"><input type="radio" name="optionFlex">Stiff</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Speed</label>
+                <label>Comfort</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionSpeed">1</label>
-                <label class="radio-inline"><input type="radio" name="optionSpeed">2</label>
-                <label class="radio-inline"><input type="radio" name="optionSpeed">3</label>
-                <label class="radio-inline"><input type="radio" name="optionSpeed">4</label>
-                <label class="radio-inline"><input type="radio" name="optionSpeed">5</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">1</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">2</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">3</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">4</label>
+                <label class="radio-inline"><input type="radio" name="optionComfort">5</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Stability</label>
+                <label>Responsiveness</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionStability">1</label>
-                <label class="radio-inline"><input type="radio" name="optionStability">2</label>
-                <label class="radio-inline"><input type="radio" name="optionStability">3</label>
-                <label class="radio-inline"><input type="radio" name="optionStability">4</label>
-                <label class="radio-inline"><input type="radio" name="optionStability">5</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">1</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">2</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">3</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">4</label>
+                <label class="radio-inline"><input type="radio" name="optionResponsiveness">5</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Switch </label>
+                <label>Ratchet System</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionSwitch">1</label>
-                <label class="radio-inline"><input type="radio" name="optionSwitch">2</label>
-                <label class="radio-inline"><input type="radio" name="optionSwitch">3</label>
-                <label class="radio-inline"><input type="radio" name="optionSwitch">4</label>
-                <label class="radio-inline"><input type="radio" name="optionSwitch">5</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">1</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">2</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">3</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">4</label>
+                <label class="radio-inline"><input type="radio" name="optionRatchetSystem">5</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Edge Control </label>
+                <label>Adjustability</label>
               </div>
               <div class="col-sm-7">
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">1</label>
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">2</label>
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">3</label>
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">4</label>
-                <label class="radio-inline"><input type="radio" name="optionEdgeControl">5</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">1</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">2</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">3</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">4</label>
+                <label class="radio-inline"><input type="radio" name="optionAdjustability">5</label>
               </div>
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Forgiveness </label>
+                <label>Forgiveness</label>
               </div>
               <div class="col-sm-7">
                 <label class="radio-inline"><input type="radio" name="optionForgiveness">1</label>
@@ -502,7 +496,7 @@
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Park </label>
+                <label>Park</label>
               </div>
               <div class="col-sm-7">
                 <label class="radio-inline"><input type="radio" name="optionPark">1</label>
@@ -514,7 +508,7 @@
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>All Mountain </label>
+                <label>All Mountain</label>
               </div>
               <div class="col-sm-7">
                 <label class="radio-inline"><input type="radio" name="optionAllMountain">1</label>
@@ -526,7 +520,7 @@
             </div>
             <div class="row form-group">
               <div class="col-sm-5">
-                <label>Back Country </label>
+                <label>Back Country</label>
               </div>
               <div class="col-sm-7">
                 <label class="radio-inline"><input type="radio" name="optionBackCountry">1</label>
