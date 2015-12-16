@@ -1,4 +1,4 @@
 angular.module('MyApp')
-  .controller('MapCtrl', function($scope, $sce) {
-    $scope.snowboard_emoji = $sce.trustAsResourceUrl('../images/snowboard_emoji.png');
+  .controller('MapCtrl', function($scope) {
+    // $scope.snowboard_emoji = "/images/snowboard_emoji.png";
   });
