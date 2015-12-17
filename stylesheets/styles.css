@@ -192,10 +192,12 @@ ul {
 }
 
 .profile-picture {
+  height: 100px;
   display: block;
 }
 
 .profile-picture-large {
+  height: 175px;
   display: block;
 }
 
