@@ -61,6 +61,11 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
         resolve: {
           loginRequired: loginRequired
         }
+      })
+      .state('stats', {
+        url: '/stats',
+        templateUrl: 'partials/stats.html',
+        controller: 'StatsCtrl',
       });
 
     $urlRouterProvider.otherwise('/');

@@ -37,7 +37,8 @@
 
       <ul class="nav navbar-nav pull-right">
         <li><a href="#/">Home</a></li>
-        <li><a href="#/news">News</a></li>
+        <!-- <li><a href="#/news">News</a></li> -->
+        <li><a href="#/stats">Stats</a></li>
         <li ng-if="isAuthenticated()"><a href="#/profile">Profile</a></li>
         <li ng-if="isAuthenticated()"><a href="#/inventory">Inventory</a></li>
         <li ng-if="isAuthenticated()"><a href="#/map">Map</a></li>
@@ -71,6 +72,9 @@
     <script src="controllers/profile.js"></script>
     <script src="controllers/navbar.js"></script>
     <script src="controllers/inventory.js"></script>
+    <script src="controllers/map.js"></script>
+    <script src="controllers/stats.js"></script>
+    <!-- <script src="controllers/news.js"></script> -->
     <script src="services/account.js"></script>
   </body>
 </html>
