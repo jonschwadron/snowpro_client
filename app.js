@@ -97,3 +97,17 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       return deferred.promise;
     }
   });
+
+  angular.module('MyApp')
+    .controller('NavCtrl', function($scope, $http, toastr, Account) {
+      $scope.getProfile = function() {
+        Account.getProfile()
+          .then(function(response) {
+            $scope.user = response.data;
+          })
+          .catch(function(response) {
+            toastr.error(response.data.message, response.status);
+          });
+      };
+      $scope.getProfile();
+    });

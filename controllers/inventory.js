@@ -16,18 +16,6 @@ angular.module('MyApp')
 
 angular.module('MyApp')
   .controller('InventoryCtrl', function($scope, $auth, toastr, Account) {
-    $scope.showModalSnowboardReview = false;
-    $scope.showModalBindingsReview = false;
-    $scope.showModalBootsReview = false;
-    $scope.toggleModalSnowboardReview = function(){
-        $scope.showModalSnowboardReview = !$scope.showModalSnowboardReview;
-    };
-    $scope.toggleModalBindingsReview = function(){
-        $scope.showModalBindingsReview = !$scope.showModalBindingsReview;
-    };
-    $scope.toggleModalBootsReview = function(){
-        $scope.showModalBootsReview = !$scope.showModalBootsReview;
-    };
     // $scope.getGears = function() {
     //   Account.getGears()
     //     .then(function(response) {
