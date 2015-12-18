@@ -19,13 +19,23 @@
         <a class="navbar-brand" href="#/"><i class="ion-ios7-pulse-strong"></i> SnowPro</a>
       </div>
       <ul class="nav navbar-nav">
-        <li ng-if="isAuthenticated()">
-          <div class="searchbox input-group stylish-input-group">
+        <li>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="year brand model of snowboard">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Search</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+          <!-- <div class="searchbox input-group stylish-input-group">
             <input type="text" class="form-control" placeholder="Search" />
             <span class="input-group-addon">
               <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
             </span>
-          </div>
+          </div> -->
         </li>
         <li><a href="#/">Version: 0.0.55</a></li>
       </ul>
