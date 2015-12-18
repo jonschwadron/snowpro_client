@@ -1,8 +1,9 @@
 angular.module('MyApp')
-  .controller('InventoryCtrl', function($scope) {
+  .controller('InventoryCtrl', function($scope, $auth, toastr, Account) {
     $scope.showModalSnowboardReview = false;
     $scope.showModalBindingsReview = false;
     $scope.showModalBootsReview = false;
+
     $scope.toggleModalSnowboardReview = function(){
         $scope.showModalSnowboardReview = !$scope.showModalSnowboardReview;
     };
@@ -12,28 +13,7 @@ angular.module('MyApp')
     $scope.toggleModalBootsReview = function(){
         $scope.showModalBootsReview = !$scope.showModalBootsReview;
     };
-  });
 
-angular.module('MyApp')
-  .controller('InventoryCtrl', function($scope, $auth, toastr, Account) {
-    // $scope.getGears = function() {
-    //   Account.getGears()
-    //     .then(function(response) {
-    //       $scope.user = response.data;
-    //     })
-    //     .catch(function(response) {
-    //       toastr.error(response.data.message, response.status);
-    //     });
-    // };
-    // $scope.updateGears = function() {
-    //   Account.updateGears($scope.user)
-    //     .then(function() {
-    //       toastr.success('Inventory has been updated');
-    //     })
-    //     .catch(function(response) {
-    //       toastr.error(response.data.message, response.status);
-    //     });
-    // };
     $scope.getSnowboard = function() {
       Account.getSnowboard()
         .then(function(response) {
@@ -88,7 +68,7 @@ angular.module('MyApp')
           toastr.error(response.data.message, response.status);
         });
     };
-    //$scope.getGears();
+
     $scope.getSnowboard();
     $scope.getBindings();
     $scope.getBoots();
