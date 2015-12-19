@@ -1,5 +1,5 @@
 angular.module('MyApp')
-  .controller('NavbarCtrl', function($scope, $auth, toastr, Account) {
+  .controller('NavbarCtrl', function($scope, $auth, $http, toastr, Account) {
     $scope.isAuthenticated = function() {
       return $auth.isAuthenticated();
     };
