@@ -4,7 +4,7 @@ angular.module('MyApp')
       $auth.login($scope.user)
         .then(function() {
           toastr.success('You have successfully signed in!');
-          $location.path('snowpro_client/');
+          $location.path('/snowpro_client/');
         })
         .catch(function(error) {
           toastr.error(error.data.message, error.status);
@@ -14,7 +14,7 @@ angular.module('MyApp')
       $auth.authenticate(provider)
         .then(function() {
           toastr.success('You have successfully signed in with ' + provider + '!');
-          $location.path('snowpro_client/');
+          $location.path('/snowpro_client/');
         })
         .catch(function(error) {
           if (error.error) {
