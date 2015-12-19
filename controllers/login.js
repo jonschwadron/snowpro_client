@@ -14,7 +14,7 @@ angular.module('MyApp')
       $auth.authenticate(provider)
         .then(function() {
           toastr.success('You have successfully signed in with ' + provider + '!');
-          $location.path('/');
+          $location.path('snowpro_client/');
         })
         .catch(function(error) {
           if (error.error) {

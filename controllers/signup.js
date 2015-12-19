@@ -4,13 +4,13 @@ angular.module('MyApp')
       $auth.signup($scope.user)
         .then(function(response) {
           $auth.setToken(response);
-          $location.path('/');
+          $location.path('snowpro_client/');
           toastr.info('You have successfully created a new account and have been signed-in');
         })
         .catch(function(response) {
           toastr.error(response.data.message);
           toastr.error('SOMETHING FUCKING BROKE!');
-          console.log(location.path('/'));
+          console.log(location.path('snowpro_client/'));
         });
     };
   });

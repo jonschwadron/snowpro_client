@@ -4,6 +4,6 @@ angular.module('MyApp')
     $auth.logout()
       .then(function() {
         toastr.info('You have been logged out');
-        $location.path('/');
+        $location.path('snowpro_client/');
       });
   });
