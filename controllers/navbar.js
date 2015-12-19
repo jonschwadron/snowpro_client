@@ -12,5 +12,5 @@ angular.module('MyApp')
           toastr.error(response.data.message, response.status);
         });
     };
+    $scope.getProfile();
   });
-  $scope.getProfile();
