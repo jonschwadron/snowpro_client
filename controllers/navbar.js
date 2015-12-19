@@ -3,8 +3,8 @@ angular.module('MyApp')
     $scope.isAuthenticated = function() {
       return $auth.isAuthenticated();
     };
-    $scope.getProfile = function() {
-      Account.getProfile()
+    $scope.getDisplayName = function() {
+      Account.getDisplayName()
         .then(function(response) {
           $scope.user = response.data;
         })
@@ -12,5 +12,5 @@ angular.module('MyApp')
           toastr.error(response.data.message, response.status);
         });
     };
-    $scope.getProfile();
+    $scope.getDisplayName();
   });
