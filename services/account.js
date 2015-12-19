@@ -25,8 +25,8 @@ angular.module('MyApp')
       updateBoots: function(bootsData) {
         return $http.put('https://snowpro.herokuapp.com/api/boots', bootsData);
       },
-      getDisplayName: function(displayName) {
-        return $http.put('https://snowpro.herokuapp.com/api/displayName', displayName);
+      getDisplayName: function() {
+        return $http.put('https://snowpro.herokuapp.com/api/displayName');
       }
     };
   });
