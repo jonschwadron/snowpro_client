@@ -13,3 +13,4 @@ angular.module('MyApp')
         });
     };
   });
+  $scope.getProfile();
