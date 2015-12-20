@@ -1,5 +1,5 @@
 angular.module('MyApp')
-  .controller('SignupCtrl', function($scope, $location, $auth, toastr) {
+  .controller('SignupCtrl', function($scope, $auth, $location, toastr) {
     $scope.signup = function() {
       $auth.signup($scope.user)
         .then(function(response) {
@@ -10,7 +10,7 @@ angular.module('MyApp')
         .catch(function(response) {
           toastr.error(response.data.message);
           toastr.error('SOMETHING FUCKING BROKE!');
-          console.log(location.path('/'));
+          console.log($location.path);
         });
     };
   });
