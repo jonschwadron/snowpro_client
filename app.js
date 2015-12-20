@@ -74,9 +74,6 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       clientId: '799d1f8ea0e44ac8b70e7f18fcacedd1'
     });
 
-    $authProvider.loginUrl = 'https://snowpro.herokuapp.com/auth/login';
-    $authProvider.signupUrl = 'https://snowpro.herokuapp.com/auth/signup';
-
     function skipIfLoggedIn($q, $auth) {
       var deferred = $q.defer();
       if ($auth.isAuthenticated()) {
