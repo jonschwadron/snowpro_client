@@ -10,7 +10,7 @@ angular.module('MyApp')
         .catch(function(response) {
           toastr.error(response.data.message);
           toastr.error('SOMETHING FUCKING BROKE!');
-          console.log($location.path);
+          console.log($auth.setToken(response));
         });
     };
   });
