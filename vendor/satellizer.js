@@ -22,7 +22,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
       withCredentials: true,
       tokenRoot: null,
       cordova: false,
-      baseUrl: 'https://snowpro.herokuapp.com/',
+      baseUrl: '/snowpro_client',
       loginUrl: 'https://snowpro.herokuapp.com/auth/login/',
       signupUrl: 'https://snowpro.herokuapp.com/auth/signup/',
       unlinkUrl: 'https://snowpro.herokuapp.com/auth/unlink/',
