@@ -22,7 +22,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
       withCredentials: true,
       tokenRoot: null,
       cordova: false,
-      baseUrl: '/',
+      baseUrl: '/snowpro_client',
       loginUrl: '/auth/login',
       signupUrl: '/auth/signup',
       unlinkUrl: '/auth/unlink/',
