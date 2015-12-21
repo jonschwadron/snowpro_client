@@ -65,7 +65,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       .state('stats', {
         url: '/stats',
         templateUrl: 'partials/stats.html',
-        controller: 'StatsCtrl',
+        controller: 'StatsCtrl'
       });
 
     $authProvider.instagram({
