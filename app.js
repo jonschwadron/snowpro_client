@@ -9,7 +9,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       //     loginRequired: loginRequired
       //   }
       // })
-      .state('home', {
+      .state('news', {
         url: '/',
         controller: 'NewsCtrl',
         templateUrl: 'partials/news.html',
