@@ -4,10 +4,10 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       .state('home', {
         url: '/',
         controller: 'HomeCtrl',
-        templateUrl: 'partials/home.html',
-        resolve: {
-          loginRequired: loginRequired
-        }
+        templateUrl: 'partials/news.html',
+        // resolve: {
+        //   loginRequired: loginRequired
+        // }
       })
       .state('login', {
         url: '/login',
