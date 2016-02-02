@@ -1,18 +1,13 @@
 angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.router', 'satellizer'])
   .config(function($stateProvider, $urlRouterProvider, $authProvider) {
     $stateProvider
-      // .state('home', {
-      //   url: '/',
-      //   controller: 'HomeCtrl',
-      //   templateUrl: 'partials/home.html',
-      //   resolve: {
-      //     loginRequired: loginRequired
-      //   }
-      // })
-      .state('news', {
+      .state('home', {
         url: '/',
-        controller: 'NewsCtrl',
-        templateUrl: 'partials/news.html',
+        controller: 'HomeCtrl',
+        templateUrl: 'partials/home.html',
+        resolve: {
+          loginRequired: loginRequired
+        }
       })
       .state('login', {
         url: '/login',
