@@ -4,7 +4,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       .state('home', {
         url: '/',
         controller: 'NewsCtrl',
-        templateUrl: 'partials/news.html',
+        templateUrl: 'partials/news.html'
         // resolve: {
         //   loginRequired: loginRequired
         // }
