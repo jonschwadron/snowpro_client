@@ -1,5 +1,10 @@
 angular.module('MyApp')
   .controller('HomeCtrl', function($scope, $http, toastr, Account) {
+    $scope.getFeedXML = function() {
+      return $scope.xml
+    }
+    $scope.getFeedXML();
+
     // $scope.getProfile = function() {
     //   Account.getProfile()
     //     .then(function(response) {
