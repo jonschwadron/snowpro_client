@@ -3,11 +3,8 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
     $stateProvider
       .state('home', {
         url: '/',
-        controller: 'NewsCtrl',
-        templateUrl: 'partials/news.html'
-        // resolve: {
-        //   loginRequired: loginRequired
-        // }
+        controller: 'HomeCtrl',
+        templateUrl: 'partials/home.html'
       })
       .state('login', {
         url: '/login',
