@@ -65,6 +65,8 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
         controller: 'StatsCtrl'
       });
 
+    $urlRouterProvider.otherwise('/');
+
     $authProvider.instagram({
       clientId: '799d1f8ea0e44ac8b70e7f18fcacedd1'
     });
